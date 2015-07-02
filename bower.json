@@ -6,8 +6,7 @@
     "standards.less"
   ],
   "dependencies": {
-    "normalize.less": "*",
-    "bootstrap-grid-css": "*"
+    "normalize.css": "*"
   },
   "keywords": [
     "less",
