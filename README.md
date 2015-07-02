@@ -2,12 +2,15 @@
 
 ## Installation
 In your **composer.json**, add the following to your **"require"** object:
+
 	"academies-trust/less-framework": "*"
 
 In your cmd or equivalent, run
+
 	composer install
 
 At the top of your **app.less**, include the **standards**. In a standard installation of Laravel 5.1 this looks a little something like this:
+
 	@import "../../../vendor/academies-trust/less-framework/standards";
 
 The next time you run **gulp**, the standards will be imported.
