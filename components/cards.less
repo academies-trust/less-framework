@@ -1,0 +1,44 @@
+.card {
+	border-radius: 2px;
+	.card-title,
+	header {
+		padding: 1.6rem;
+		.text-body-2;
+	}
+	.card-title-large {
+		.text-headline;
+		padding: 2.4rem 1.6rem 1.6rem;
+	}
+	.card-title-large-solo {
+		.text-headline;
+		padding: 2.4rem 1.6rem;	
+	}
+	.card-actions {
+		padding: 0.8rem;
+		.card-action {
+			margin-right: 0.8rem;
+		}
+	}
+	.card-content {
+		.text-body-1;
+		padding: 1.6rem;
+	}
+	.card-content-solo {
+		.text-body-1;
+		padding: 1.6rem 1.6rem 2.4rem;
+	}
+	.card-media {
+		width: 100%;
+		overflow: hidden;
+		padding-top: 56.25%;
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+		}
+	}
+}
+.card + .card {
+	margin: 0 0.8rem 0.8rem 0;
+}

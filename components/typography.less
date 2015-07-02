@@ -1,0 +1,77 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,700,300italic,400);
+
+body {
+	font-size: 10px;
+}
+
+body, label, .checkbox label {
+	font-weight: 300;
+}
+
+@dark-text-primary: fadeout(@black, 13%);
+@dark-text-secondary: fadeout(@black, 46%);
+@dark-text-disabled: fadeout(@black, 74%);
+@dark-text-dividers: fadeout(@black, 88%);
+
+@light-text-primary: @white;
+@light-text-secondary: fadeout(@white, 30%);
+@light-text-disabled: fadeout(@white, 70%);
+@light-text-dividers: fadeout(@white, 88%);
+
+.text-type(@weight, @size) {
+	font-weight: @weight;
+	font-size: @size;
+}
+
+@text-light: 300;
+
+@text-regular: 400;
+
+@text-medium: 500;
+
+@text-bold: 700;
+
+.text-display-4 {
+	.text-type(@text-light, 11.2rem);
+}
+
+.text-display-3 {
+	.text-type(@text-regular, 5.6rem);
+}
+
+.text-display-2 {
+	.text-type(@text-regular, 4.5rem);
+}
+
+.text-display-1 {
+	.text-type(@text-regular, 3.4rem);
+}
+
+.text-headline {
+	.text-type(@text-regular, 2.4rem);
+}
+
+.text-title {
+	.text-type(@text-medium, 5.6rem);
+}
+
+.text-subhead {
+	.text-type(@text-regular, 1.5rem);
+}
+
+.text-body-2 {
+	.text-type(@text-medium, 1.3rem);
+}
+
+.text-body-1 {
+	.text-type(@text-regular, 1.3rem);
+}
+
+.text-caption {
+	.text-type(@text-regular, 1.2rem);
+}
+
+.text-button {
+	.text-type(@text-medium, 1.4rem);
+	text-transform: uppercase;
+}

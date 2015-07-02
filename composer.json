@@ -1,0 +1,22 @@
+{
+    "name": "academies-trust/less-framework",
+    "description": "The Framework which gives you Less.",
+    "keywords": ["framework", "less"],
+    "license": "MIT",
+    "homepage": "https://github.com/academies-trust/less-framework",
+    "support": {
+        "issues": "https://github.com/academies-trust/less-framework/issues",
+        "source": "https://github.com/academies-trust/less-framework"
+    },
+    "authors": [
+        {
+            "name": "Ralph Lawrence",
+            "email": "r.lawrence@hasla.org.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "components/normalize.css": "*"
+    },
+    "minimum-stability": "dev"
+}
