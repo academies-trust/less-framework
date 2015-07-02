@@ -17,3 +17,10 @@
 
 @positive: #4CAF50;
 @negative: #F44336;
+
+.box-shadow(@drop) {
+	box-shadow: 0px @drop @drop*3 0px rgba(0,0,0,0.4);
+}
+.box-shadow-soft(@drop) {
+	box-shadow: 0px @drop @drop*3 5px rgba(0,0,0,0.2);	
+}
