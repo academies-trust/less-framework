@@ -1,6 +1,6 @@
 {
   "name": "less-framework",
-  "version": "0.2.4",
+  "version": "0.2.45",
   "description": "The Framework which gives you Less.",
   "main": [
     "standards.less"

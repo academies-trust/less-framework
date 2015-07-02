@@ -1,0 +1,76 @@
+.form-group {
+	position: relative;
+	min-height: 4.8rem;
+	.material-icons {
+		float: left;
+		line-height: 4.8rem;
+		height: 4.8rem;
+		width: 4.8rem;
+		margin-right: 1.6rem;
+		.material-icons.md-24;
+	}
+	.form-input {
+		position: relative;
+		z-index: 2;
+		.input {
+			border: 0;
+			background: none;
+			position: relative;
+			padding: 1.6rem 0;
+			.dark-text-primary;
+			.text-subhead;
+		}
+		.input:after {
+			content: "";
+			position: absolute;
+			bottom: -0.8rem;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background: @dark-text-dividers;
+		}
+		.input:valid:after {
+			content: "";
+			position: absolute;
+			bottom: -0.8rem;
+			left: 0;
+			right: 0;
+			height: 1px;
+			background: @positive;
+		}
+		.input:focus:after {
+			content: "";
+			position: absolute;
+			bottom: -1rem;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background: @primary;	
+		}
+		.input:valid:focus:after {
+			content: "";
+			position: absolute;
+			bottom: -1rem;
+			left: 0;
+			right: 0;
+			height: 3px;
+			background: @positive;
+		}
+		.label {
+			position: absolute;
+			z-index: -1;
+			top: 1.6rem;
+			left: 0;
+			.text-subhead;
+			color: @dark-text-dividers;
+		}
+		.input:focus + .label {
+			.text-caption;
+			color: @primary;
+		}
+		.input.touched + .label {
+			top: 0;
+
+		}
+	}
+}
