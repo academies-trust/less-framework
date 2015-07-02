@@ -20,6 +20,16 @@ Please view the wiki to find information on the included components: https://git
 
 This package uses bootstrap grid, the documentation of which can be found here: http://getbootstrap.com/css/#grid
 
+### Initial Setup
+
+It is required to set up your colour scheme. In your app.less file, add the following variables (with your own colours):
+
+	@primary: #ff5722;
+	@primary-toolbar: #E64A19;
+	@primary-light: #FFCCBC;
+	@accent: #0091EA;
+
+To effectively choose your colours, it is worth looking here: http://www.google.co.uk/design/spec/style/color.html#color-color-palette
 
 ## Overriding
 
