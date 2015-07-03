@@ -1,22 +1,32 @@
 @import url(http://fonts.googleapis.com/css?family=Material+Icons);
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,700,300italic,400);
 
-@import (less) "bootstrap.css";
 @import (less) "../normalize.css/normalize.css";
+@import (less) "bootstrap.css";
 @import "components/components";
 
 @black: #000;
 @white: #fff;
 
 @theme-status: #E0E0E0;
-@theme-bar: #F5F5F5;
 @theme-background: #FAFAFA;
 @theme-dialog: #FFFFFF;
+
+@grey-100: #F5F5F5;
+@grey-200: #eeeeee;
+
 
 @font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
 
 @positive: #4CAF50;
 @negative: #F44336;
+
+body {
+	font-size: 10px;
+	background: @theme-background;
+	color: @dark-text-primary;
+	box-sizing: border-box;
+}
 
 .box-shadow(@drop) {
 	box-shadow: 0px @drop @drop*3 0px rgba(0,0,0,0.4);

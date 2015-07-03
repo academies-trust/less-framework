@@ -1,3 +1,72 @@
 .table {
 	max-width: 100%;
+	thead {
+		.text-type(@text-medium, 1.2rem);
+		color: @dark-text-secondary;
+		.header th {
+			height: 6.4rem;
+			line-height: 6.4rem;
+			.text-type(@text-regular, 2rem);
+		}
+		th {
+			height: 5.6rem;
+			line-height: 5.6rem;
+		}
+		th:first-of-type {
+			padding-left: 2.4rem;
+		}
+		th + th {
+			padding-left: 5.6rem;
+		}
+		th:last-of-type {
+			padding-right: 2.4rem;
+		}
+	}
+	tbody {
+		.text-body-1;
+		tr {
+			background: none;
+		}
+		tr:hover {
+			background: @grey-200;
+		}
+		tr.selected {
+			background: @grey-100;
+		}
+		td {
+			height: 4.8rem;
+			line-height: 4.8rem;
+		}
+		td:first-of-type {
+			padding-left: 2.4rem;
+		}
+		td + td {
+			padding-left: 5.6rem;
+		}
+		td:last-of-type {
+			padding-right: 2.4rem;
+		}
+	}
+	tfoot {
+		height: 5.6rem;
+		line-height: 5.6rem;
+		.text-type(@text-regular, 1.2rem);
+		color: @dark-text-secondary;
+	}
+	.row-select {
+		padding: 0 2.4rem;
+		input[type="checkbox"] {
+			box-shadow: inset 0 0 0 4px;
+			width: 1.8rem;
+			height: 1.8rem;
+		}
+		input[type="checkbox"]:hover {
+			background: @dark-text-dividers;
+		}
+		input[type="checkbox"]:checked {
+			background: @primary;
+			color: @light-text-primary;
+			box-shadow: none;
+		}
+	}
 }
