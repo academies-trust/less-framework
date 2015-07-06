@@ -14,12 +14,15 @@
 
 @grey-100: #F5F5F5;
 @grey-200: #eeeeee;
+@grey-700: #616161;
 
 
 @font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
 
 @positive: #4CAF50;
 @negative: #F44336;
+@warning: #f1c40f;
+@urgent: #e67e22;
 
 body {
 	font-size: 10px;
@@ -33,4 +36,50 @@ body {
 }
 .box-shadow-soft(@drop) {
 	box-shadow: 0px @drop @drop*3 5px rgba(0,0,0,0.2);	
+}
+.text-center {
+	text-align: center;
+}
+.pull-right {
+	float: right;
+}
+.pull-left {
+	float: left;
+}
+.clearfix:after,
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.bg-positive {
+	background: @positive;
+	.light-text-primary;
+}
+.bg-negative {
+	background: @negative;
+	.light-text-primary;
+}
+.bg-warning {
+	background: @warning;
+	.light-text-primary;
+}
+.bg-urgent {
+	background: @urgent;
+	.light-text-primary;
+}
+.center-block {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+}
+.invisible {
+  visibility: hidden;
 }

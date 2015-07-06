@@ -1,0 +1,41 @@
+.toasts {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	.toast {
+		display: inline-block;
+		min-width: 28.8rem;
+		max-width: 56.8rem;
+		border-radius: 2px;
+		@media only screen and (min-width: 768px) {
+			max-width: 100%;
+			width: 100%;
+		}
+		.text-body-1;
+		background: #323232;
+		@light-text-primary;
+		padding: 1.4rem 2.4rem;
+		.actions {
+			float: right;
+			padding-left: 2.4rem;
+		}
+		.message {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			width: 100%;
+			margin: 0;
+			line-height: 1.5em;
+		}
+	}
+	.toast-multiline {
+		padding: 2.4rem;
+		.message {
+			white-space: normal;
+			text-overflow: clip;
+			overflow: visible;
+		}
+	}
+}

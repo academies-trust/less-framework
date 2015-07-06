@@ -1,0 +1,35 @@
+.tooltip-parent {
+	position: relative;
+	.tooltip {
+		position: absolute;
+		top: 100%;
+		padding: 0 0.8rem;
+		line-height: 2.2rem;
+		overflow: hidden;
+		height: 0;
+		opacity: 0;
+		.text-type(@text-medium, 1rem);
+		@media only screen and (min-width: 768px) {
+			.text-type(@text-medium, 1.4rem);
+			top: 120%;
+			top: calc(100% + 2.4rem);
+			padding: 0 1.6rem;
+			line-height: 3.2rem;
+		}
+		background: @grey-700;
+		transition: top 0.2s, opacity 0.2s;
+	}
+}
+.tooltip-parent:hover {
+	.tooltip {
+		top: 110%;
+		top: calc(100% + 1.4rem);
+		height: 2.2rem;
+		opacity: 0.9;
+		@media only screen and (min-width: 768px) {
+			top: 120%;
+			top: calc(100% + 2.4rem);
+			height: 3.2rem;
+		}
+	}
+}
