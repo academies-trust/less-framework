@@ -7,6 +7,7 @@ Run the following
 
 	bower install less-framework --save
 
+Then include the standards in your project.
 At the top of your **app.less**, include the **standards**. In a standard installation of Laravel 5.1 this looks a little something like this:
 
 	@import "../../../vendor/bower_components/less-framework/standards";
